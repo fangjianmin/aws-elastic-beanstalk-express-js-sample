@@ -35,7 +35,7 @@ app.use(cookieParser());
 //这里传入了一个密钥加session id
 app.use(cookieParser('Wilson'));
 //使用靠就这个中间件
-app.use(session({ secret: 'wilson'}));
+app.use(session({secret: 'wilson'}));
 
 app.use('/', routes);
 app.use('/reg', reg);
@@ -45,7 +45,7 @@ app.use('/logout', logout);
 // app.use('/upload', upload);
 
 /// catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
@@ -56,7 +56,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
+    app.use(function (err, req, res, next) {
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,
@@ -67,7 +67,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
         message: err.message,
@@ -75,7 +75,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.listen(port, function(){
+app.listen(port, function () {
     console.log(`App running on http://localhost:${port}`);
 });
 
