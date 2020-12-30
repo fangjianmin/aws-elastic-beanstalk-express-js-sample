@@ -1,5 +1,5 @@
 {
-  "name": "aws-elastic-beanstalk-express-js-sample",
+  "name": "Login Demo",
   "version": "1.0.0",
   "description": "Sample Node.js (Express) app for AWS Elastic Beanstalk",
   "main": "app.js",
@@ -12,6 +12,14 @@
   },
   "license": "MIT-0",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express-session" : "latest",
+    "mysql" : "latest"
   }
 }
