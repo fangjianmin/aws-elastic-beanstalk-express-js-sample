@@ -22,7 +22,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.engine('.html', ejs.__express);
-app.set('view engine', 'html');
+// app.set('view engine', 'html');
 
 
 app.use(favicon());
