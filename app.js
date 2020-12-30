@@ -12,7 +12,7 @@ const routes = require('./routes/index');
 const reg = require('./routes/reg');
 const login = require('./routes/login');
 const logout = require('./routes/logout');
-const test = require('./routes/test');
+// const test = require('./routes/test');
 //const main = require('./routes/main');
 
 
