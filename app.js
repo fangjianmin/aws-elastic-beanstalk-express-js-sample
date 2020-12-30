@@ -21,7 +21,7 @@ const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.engine('.html', ejs.__express);
+// app.engine('.html', ejs.__express);
 // app.set('view engine', 'html');
 
 
@@ -30,7 +30,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //这里传入了一个密钥加session id
 app.use(cookieParser('Wilson'));

@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var DB_NAME = 'devopsdatabase';
+var DB_NAME = 'devops';
 
 var pool  = mysql.createPool({
     host     : 'devopsdatabase.chmerlusvoxv.ap-southeast-1.rds.amazonaws.com',
