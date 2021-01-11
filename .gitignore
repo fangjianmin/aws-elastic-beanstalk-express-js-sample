@@ -172,3 +172,8 @@ tags
 .history
 
 # End of https://www.toptal.com/developers/gitignore/api/node,macos,visualstudiocode,vim
+/.idea/.gitignore
+/aws-elastic-beanstalk-express-js-sample.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
